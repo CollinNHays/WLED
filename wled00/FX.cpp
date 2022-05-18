@@ -4204,7 +4204,7 @@ uint16_t WS2812FX::mode_aurora(void) {
     }
   }
 
-  uint8_t backlight = 1; //dimmer backlight if less active colors
+  uint8_t backlight = 0; //dimmer backlight if less active colors
   if (SEGCOLOR(0)) backlight++;
   if (SEGCOLOR(1)) backlight++;
   if (SEGCOLOR(2)) backlight++;
